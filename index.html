@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Garg | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 15px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero .subtitle {
+            font-size: 22px;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .hero .roll {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
+        .intro {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            margin-top: -40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .intro h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #667eea;
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .intro-text p {
+            margin-bottom: 20px;
+        }
+
+        .interests {
+            background: #f8f9ff;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .interests h3 {
+            margin-bottom: 20px;
+            color: #667eea;
+            font-size: 24px;
+        }
+
+        .interests ul {
+            list-style: none;
+        }
+
+        .interests li {
+            padding: 10px 0;
+            font-size: 17px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .interests li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 20px;
+        }
+
+        .about {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #667eea;
+        }
+
+        .about p {
+            line-height: 1.8;
+            font-size: 18px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .intro-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Harsh Garg</h1>
+        <p class="subtitle">B.Tech CSE Student | 5th Semester | Bennett University</p>
+        <p class="roll">Roll No: E23CSEU1414</p>
+    </section>
+
+    <section class="intro">
+        <h2>👋 Introduction</h2>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p>
+                    Hey there! I'm Harsh Garg, a 5th-semester Computer Science Engineering student at Bennett University. 
+                    I'm someone who loves diving deep into code, solving complex problems, and building things that matter.
+                </p>
+                <p>
+                    Beyond the world of tech, I'm a creative and eccentric soul with a passion for manga, anime, food, 
+                    and table tennis. I believe the best ideas come from the intersection of different interests, 
+                    and I'm always exploring new ways to blend creativity with technology.
+                </p>
+                <p>
+                    Whether it's debugging code at 2 AM, discussing the latest anime plot twist, or hunting down 
+                    the best food spots, I bring the same energy and curiosity to everything I do.
+                </p>
+            </div>
+            
+            <div class="interests">
+                <h3>🎯 Passions & Interests</h3>
+                <ul>
+                    <li>📚 Manga & Anime enthusiast</li>
+                    <li>🍜 Food explorer & connoisseur</li>
+                    <li>💻 Technology & innovation</li>
+                    <li>🏓 Table Tennis player</li>
+                    <li>🎨 Creative & eccentric projects</li>
+                    <li>🧩 Problem-solving & algorithms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About My Journey</h2>
+        <p>
+            As a B.Tech student at Bennett University, I'm constantly learning and evolving. I'm passionate about 
+            software development, exploring algorithms, and building projects that solve real-world problems. 
+            I enjoy learning new technologies, taking on technical challenges, and constantly improving as a developer. 
+            This website is a small showcase of my work, skills, and the things I'm building along the way. 
+            Let's create something amazing together!
+        </p>
+    </section>
+</body>
+</html>
